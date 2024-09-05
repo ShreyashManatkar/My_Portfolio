@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="row my-2">
+    {% for project in projects_show %}
+    <div class="col-6">
+
+        <h4 class="text-light">{{ project.title }}</h4>
+        <a href="https://github.com/ShreyashManatkar" target="_blank" class="ms-3">
+        <img src="{% static project.path %}" alt="{{ project.title }}" width="500" height="800" class="img-fluid">
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

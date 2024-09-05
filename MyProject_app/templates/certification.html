@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="row">
+
+  <div class="jumbotron jumbotron-fluid mt-2">
+    <h1 class="display4 text-light">Common Internship Certificate</h1>
+    <iframe src="{% static 'img/Common_Internship_Certificate.pdf' %}" width="100%" height="600px"></iframe>
+  </div> 
+
+  <div class="jumbotron jumbotron-fluid mt-2">
+    <h1 class="display4 text-light">DATA Ana Certificate</h1>
+    <iframe src="{% static 'img/DATA_Ana_Certificate.pdf' %}" width="100%" height="600px"></iframe>
+  </div>
+
+</div>
+{% endblock content %}
+
+{% comment %} {% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="row">
+
+  <div class="jumbotron jumbotron-fluid mt-2">
+    <h1 class="display4"> Common Internship Certificat</h1>
+  </div> 
+
+  
+  <div class="jumbotron jumbotron-fluid mt-2">
+    <h1 class="display4"> DATA Ana Certificate</h1>
+  </div>
+
+</div>
+
+{% endblock content %} {% endcomment %}
+
+
+

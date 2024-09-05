@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!--this div for image --> 
+<div class="row my-5 justify-content-center align-items-center">
+  <div class="col-12 d-flex justify-content-center align-items-center">
+    <div class="circular-image-container">
+      <img class="circular-image" src="{% static 'img/shrey_pass.png' %}" alt="Image">
+    </div>
+  </div>
+
+  <!--this div for title --> 
+  <div class="col-12 text-center mt-3">
+    <h4 class="title">Hi, My name is</h4>
+    <div class="name">
+      <h1>Shreyash Manatkar</h1>
+      <h1>I am a Python Developer</h1>
+    </div>
+  </div>
+
+  <!--this div for social media image and links --> 
+  <div class="col-12 text-center mt-3">
+    <div class="col-12 d-flex justify-content-center align-items-center">
+      <a href="https://www.linkedin.com/in/shreyash-manatkar-26a571285/" target="_blank" class="ms-3">
+        <img src="{% static "img/linkendin.png" %}" alt="img/linkendin.png" width="50" height="50" class="social_links" >
+      </a>
+
+      <a href="https://github.com/ShreyashManatkar" target="_blank" class="ms-3">
+        <img src="{% static "img/github1.png" %}" alt="img/github1.png" width="50" height="50" class="social_links">
+      </a>
+
+      <a href="https://www.instagram.com/shreyash_manatkar1/" target="_blank" class="ms-3">
+        <img src="{% static "img/insta.jpg" %}" alt="img/insta.jpg" width="50" height="50" class="social_links">
+      </a>
+    </div>
+
+
+  </div>
+</div>
+{% endblock content %}

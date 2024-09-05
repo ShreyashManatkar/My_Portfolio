@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="row my-5">
+    <div class="col-4 d-flex justify-content-center align-items-start">
+        <img src="{% static 'img/shrey_pass.png' %}" alt="image" class="about_image">
+    </div>
+        <!--this div for Paragraph --> 
+    <div class="col-7 text-left text-light">
+        <h2>Hello !</h2>
+        <p class="fs-6">
+            Hello! I’m Shreyash Vijay Manatkar, a passionate and enthusiastic Python developer,
+            ready to embark on my professional journey in the world of software development. 
+            With a strong foundation in Python programming and a keen interest in problem-solving, 
+            I’m eager to apply my skills to real-world projects and contribute to innovative solutions.
+        </p>
+        <h2>What I Do</h2>
+        <p class="fs-6">
+            Web Development: I have experience working with frameworks like Django, 
+            creating dynamic, responsive websites and web applications that are both user-friendly and efficient.
+        </p>
+
+        <h2>Skills</h2>
+        <p class="fs-6">
+            Languages: Python, HTML, CSS, JavaScript (basic) <br>
+            Frameworks: Django <br>
+            Tools: Git, SQL <br>
+            Libraries: Pandas, Matplotlib, NumPy
+        </p>
+
+        <h2>Let’s Connect</h2>
+        <p class="fs-6">
+            I’m currently looking for opportunities to start my career as a Python developer. 
+            If you’re interested in working together or just want to connect, 
+            feel free to reach out to me. I’m always open to new challenges and collaborations!
+        </p>
+
+    </div>
+</div>
+
+    <!--this div for LOGO --> 
+    <div class="row my-4">
+        <h2 class="text-center" style="color: #4fffb0;">My Tech Stack</h2>
+        <div class="d-flex justify-content-center align-items-center gap-2">
+            <img src="{% static "img/html.png" %}" alt="html logo" width="70" height="70" class="img-fluid">
+            <img src="{% static "img/css.png" %}" alt="css logo" width="70" height="70" class="img-fluid">
+            <img src="{% static "img/js.png" %}" alt="js logo" width="70" height="70" class="img-fluid">
+            <img src="{% static "img/Python2.png" %}" alt="python logo" width="70" height="70" class="img-fluid">
+        </div>
+    </div>
+</div>
+{% endblock content %}
